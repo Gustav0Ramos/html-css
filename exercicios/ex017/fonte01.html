@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /*o dispositivo do cliente escolhe a fonte que ele tem, caso não tenha pula para a próxima*/
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+            * cm, mm: cuidado, pois dispositivos podem term cm e mm diferentes, por conta do tamanho do dispositivo.
+            * in, px: polegada e pixel dependendo do aparelho podem ser mostrados diferentes.
+            * pt, pc: não são recomendados seu uso em disositivos digitais.
+            
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            * em: altura da letra M maiúscula.
+            * em: altura da letra X maiúscula.
+            * rem: fonte que está configurada no body.
+            * vw: altura que está configurada no body.
+            * vh: altura do view port.
+            * %: posso usar porcentagem para determinar o tamanho da letra.
+            
+            É recomendado ultilizar 16px ou 1em, pois são do mesmo tamanho e a W3c recomenda.
+            */
+            font-size: 16px;
+            font-weight: normal;
+            font-style: italic;
+            /*font-weight: lighter, normal, bold, bolder*/
+            /* weight-peso, widht-largura, height-altura */
+        }
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif; /* mudei a fonte do meu título e subtítulo*/
+            /*shorthand font
+            - font-style -> font-weight -> font-size(px ou em) -> font-family 
+            A ordem no shorthand é importante, senão for na ordem não funciona*/
+            font: italic normal 3em serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos suscipit ut mollitia, nobis alias libero provident soluta voluptate quo impedit eveniet aspernatur perspiciatis tempora molestiae, nostrum quam ad commodi officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dicta non eum numquam illum officiis vitae voluptatem sequi magni, enim beatae tempore id accusamus sunt. Qui tenetur accusantium facere eligendi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nemo fuga, iste animi est qui atque quia corrupti accusantium minus praesentium blanditiis repellendus obcaecati voluptatibus earum, unde amet voluptatem voluptatum?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate a consequuntur enim explicabo deleniti! Hic corporis numquam distinctio earum accusamus, laboriosam repellendus minus ullam nemo officiis ut. Doloribus, impedit sunt.</p>
+    
+</body>
+</html>

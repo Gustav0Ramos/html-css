@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <!--Código são comandos-->
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <!--Com a tag <code> o dódigo ficou MONOESPAÇADO, ou seja todos os espaços ficaram do mesmo tamanho-->
+    <code>
+      num - int(input('Digite um número'))
+      if num % 2 == 0;
+        print(f'O número {num} é PAR')
+      else:
+        print(f'O número {num} é ÍMPAR')
+      print ('Fim do programa')
+    </code>
+    <!--O <code> não arruma o código com identação-->
+        <pre>
+            <code>
+                num - int(input('Digite um número'))
+                if num % 2 == 0;
+                    print(f'O número {num} é PAR')
+                else:
+                    print(f'O número {num} é ÍMPAR')
+                print ('Fim do programa')
+                </code>
+        </pre>
+    <!--Caso eu coloque o <code> dentro da tag <pre> ele fica identado na forma de código, é considerado os espaços, as quebras de linhas as tabulações-->
+    <!--seleciono o que eu quero e pressiono a tecla SHIFT + TAB e puxo o que eu selecionei para a esquerda, selecionar e so TAB vai para a direita-->
+    <h2>Citações</h2>
+    <p>Como diria um pai de um amigo: <q>O computador é um burro muito rápido.</q></p>
+        <!--O <q> dá sentido de uma frase, só as aspas não elas dão forma, e no HTML o que vale é o sentido-->
+    <h2>Citações complexas</h2>
+    <p>segundo Jeff Nobel, no seu livro HTML para leigo:</p>        
+    <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+para+leigos&printsec=frontcover">
+        a diferença entre elementos inline e um  bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HYPERTEXT MARKUP LANGUAGE">HTML</abbr> e <abbr title="CASCADING STYLE SHEETS">CSS</abbr>. Estou adorando!</p>
+    <!--Com o <abbr> eu posso colocar uma legenda na palavra abreviada, no title eu coloco o que ela significa.-->
+     <h2>Texto invertido</h2>
+     <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>   
+    <!-- <bdo> Deixa as coisas de trás para frente-->
+
+
+</body>
+</html>

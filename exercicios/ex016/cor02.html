@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        /*TAG de configuração global de CSS, aqui eu consigo ajeitar o gradiente para ele não ficar quebrado na tela*/
+            * {
+            height: 100%; /*essa é a altura de 100%*/
+        }
+        body {
+            background-image: linear-gradient(to bottom, #D17E36, #B87F4D);
+            /* TAG para cor de fund em degrade background-image: linear-gradient()*/
+            /*coloco dentro do parenteses a direção do degrade, to left, to right, to bottom, to top*/
+            /*posso variar meu degradê no adobe color, escolho minha paleta e pego seu código e colo no meu HTML5 */
+            background-attachment: fixed;
+            /*fixo a tela para não aparecer uma faixa no fim da página.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente umente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <!--Coloquei o SOURCE:MEDIA:TYPE no MEDIA eu altero de min, para max no srcset="coloco minha imagem pelo nome, as teclas CTRL+ESPAÇO não estão funcionando", no width: coloco os pixels que eu coloque na foto e sempre coloco 50 a mais.-->
+        <img src="imagens/grande.png" alt="Imagem flexível">
+    </picture>
+    <p>Esta é minha imagem flexível.</p>
+    
+    <h1>Reprouzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- <audio src="midia/musica feliz.mp3" controls ></audio> TEM ESSA FORMA ENTRE COMENTÁRIO DE COLOCAR ÁUDIO, PORÉM FICA LIMITADA SE O NAVEGADOR DO CLIENTE NÃO FOR COMPATÍVEL COM MP3.-->
+    <!--Os áudios são compatíveis mais com essas extensões: MP3, WAV, OGG.-->
+    <audio preload="auto" controls loop>
+        <!--PRELOAD tem o AUTO (só considera que o site terminou de carregar se terminar de carregar todo o áudio), METADATA (puxa duração, arquivos e dmora um pouco para carregar, pois ele tem que carregar), NONE.-->
+        <!--Escolho o SOURCE:SRC que aí já vai essse do mídia.-->
+        <source src="midia/musica feliz.mp3" type="audio/mpeg">
+        <source src="midia/musica feliz.ogg" type="audio/ogg">
+        <source src="midia/musica feliz.wav" type="audio/wav">
+        <!--Coloquei MP3 primeiro, ou seja, ele vai tentar carregar MP3 primeiro, caso não de certo ele carrega ogg e assim por diante... até conseguir carregar o áudio.-->
+        <!--Arquivos WAV são muito pesados então, tentar evitá-los.-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/musica feliz.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+
+    </audio>
+
+</body>
+</html>

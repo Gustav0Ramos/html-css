@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>este vídeos está hospedado no meu próprio servidor.</p>
+    <!--WIDTH diminui o tamanho da tela-->
+    <!--Sempre lembrar de por CONTROLS para poder mexer no vídeo-->
+    <!-- <video src="video/Video-1.mp4" width="560" controls></video> -->
+    <video width="560" poster="foto/pexels-daniel-jurin-1835712.jpg" controls>
+        <source src="video/Video-1.mp4" type="video/mp4">
+        <source src="video/video.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <!-- Quando eu vou inserir vídeos do You Tube eu so compartilho, ele gera o código e eu copio e colo no Visual Code.-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <!--É igual o YouTube, vejo se posso compartilhar a partir dos direitos autorais, compartilho o vídeo, +opções, altero o vídeo da forma que eu quero, copio o código e colo no Visual Code-->
+    <iframe src="https://player.vimeo.com/video/29844795?h=f0a1764666&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <!--O vídeo que é compartilhado de outro site, não gasta meu serviço de hospedagem, por isso é uma ótima escolha para eu por no meu site.-->
+    
+</body>
+</html>

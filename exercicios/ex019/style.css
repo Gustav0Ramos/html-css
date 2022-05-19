@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* 
+    *A # (rashtag, serquilha) é igual id, ou seja, # = id.
+    -->Em HTML é id = em CSS é #, ou seja, quando eu diferencio em HTML eu uso id, quando eu diferencio em CSS eu uso #.
+
+    *id - Só pode 1 elemento.
+    *class - Pode mais de 1 elemento.
+    
+    *Em HTML é class = em CSS é . (ponto)
+*/
+body {
+    background-color: #D6D58E;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+h1{
+    color: #042940;
+    
+}
+h1#principal{ /* Fiz uma diferenciação de h1 agora esse que recebeu um id <h1 id="principal"> ficou alinhado ao centro. */
+    text-align: center;
+    background-color: #042940;
+    color: #DBF227;
+    font-size: 3em;
+    border-radius: 20px; /*coloquei uma borda redonda*/
+}
+h2{
+    color: #005C53;
+}
+.basico {
+    color: #FFBA49;
+}
+.intermediario {
+    color: #EF5B5B;
+}
+.avançado {
+    color: #A4A9AD;
+}
+.destaque {
+    background-color: #9C528B;
+}
