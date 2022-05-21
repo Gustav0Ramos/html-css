@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             background-color: black;
@@ -14,12 +14,26 @@
             height: 100vh;
             background-size: cover; /* TAMBÉM POSSO POR EM ALTURA% E LARGURA% MAS A TELA FICA ACHATADA, TEM O contain MAS ELE CORTA A TELA*/
 
+            /* FIXO A TELACOM ISSO TENHA A ROLAGEM, MAS O FUNDO FICA FIXO, ISSO É FAVORÁVEL PARA TELAS EM COMPUTADOR E CELULAR */
+            background-attachment: fixed;
+
             background-repeat: no-repeat;
             background-position: center center;
+
+            /* Ordem da shorthand
+            SHORTHAND - BACKGROUND
+            color > image > position > repeat  > attachment
+            > [size]
+             
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+            */
         }
         main{
             background-color: rgb(255, 255, 255);
-            width: 400px;
+
+           /* COLOQUEI A LARGURA DO CONTEUDO PARA NO MÁXIMO 400PX, E AI A TELA VAI COMPRIMINDO */
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -30,6 +44,10 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ex nisi accusamus sunt harum debitis asperiores dolorum perferendis consequuntur quas autem reiciendis unde recusandae, tenetur cum earum assumenda sed odio?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque culpa voluptate asperiores quibusdam quia sint suscipit harum, vel nesciunt modi nisi facilis. Omnis suscipit sequi eum laboriosam numquam incidunt quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique est maxime inventore? Vitae quidem quae blanditiis error ea qui tempora, officiis obcaecati deserunt. Sed commodi nemo debitis aspernatur voluptas!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ex nisi accusamus sunt harum debitis asperiores dolorum perferendis consequuntur quas autem reiciendis unde recusandae, tenetur cum earum assumenda sed odio?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque culpa voluptate asperiores quibusdam quia sint suscipit harum, vel nesciunt modi nisi facilis. Omnis suscipit sequi eum laboriosam numquam incidunt quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique est maxime inventore? Vitae quidem quae blanditiis error ea qui tempora, officiis obcaecati deserunt. Sed commodi nemo debitis aspernatur voluptas!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ex nisi accusamus sunt harum debitis asperiores dolorum perferendis consequuntur quas autem reiciendis unde recusandae, tenetur cum earum assumenda sed odio?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque culpa voluptate asperiores quibusdam quia sint suscipit harum, vel nesciunt modi nisi facilis. Omnis suscipit sequi eum laboriosam numquam incidunt quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique est maxime inventore? Vitae quidem quae blanditiis error ea qui tempora, officiis obcaecati deserunt. Sed commodi nemo debitis aspernatur voluptas!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ex nisi accusamus sunt harum debitis asperiores dolorum perferendis consequuntur quas autem reiciendis unde recusandae, tenetur cum earum assumenda sed odio?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque culpa voluptate asperiores quibusdam quia sint suscipit harum, vel nesciunt modi nisi facilis. Omnis suscipit sequi eum laboriosam numquam incidunt quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique est maxime inventore? Vitae quidem quae blanditiis error ea qui tempora, officiis obcaecati deserunt. Sed commodi nemo debitis aspernatur voluptas!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ex nisi accusamus sunt harum debitis asperiores dolorum perferendis consequuntur quas autem reiciendis unde recusandae, tenetur cum earum assumenda sed odio?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque culpa voluptate asperiores quibusdam quia sint suscipit harum, vel nesciunt modi nisi facilis. Omnis suscipit sequi eum laboriosam numquam incidunt quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique est maxime inventore? Vitae quidem quae blanditiis error ea qui tempora, officiis obcaecati deserunt. Sed commodi nemo debitis aspernatur voluptas!</p>
     </main>
 </body>
