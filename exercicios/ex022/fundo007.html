@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização Vertical das Caixas</title>
+    <style>
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%; /* CENTRALIZEI A IMAGEM */
+
+            position: relative; /* A QUE CONTÉM É RELATIVO */
+            
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            height: 200px; 
+            width: 400px;
+            margin: auto;
+            background-color: yellow;
+
+            /* PARA CENTRALIZAR VERTICALMENTE */
+            position: absolute; /* ME DÁ A OPÇÃO DE MEXER EM left E top */
+            left: 50%; /* AQUI É A DISTÂNCIA QUE VEM DA BORDA DO CONTAINER (ROXO) ATÉ A DISTÂNCIA DA PONTA DE CIMA DO COONTEÚDO (AMARELO) */
+            /* POSSO POR EM PORCENTAGEM(%) TAMBÉM, SÓ QUE É DE 0% A 100% */
+            top: 50%; /* É A DISTÂNCIA DA BORAD DE CIMA DO CONTAINER ATÉ A PONTA DE CIMA DO CONTEÚDO (AMARELO) */
+
+            /* TRANSFORMO A CAIXA APLICANDO PERSPECTIVAS, GIRAR O CONTEÚDO, MEXER O CONTEÚDO... */
+            transform: translate(-50%, -50%); /* ESTOU MEXENDO NA CAIXA (amarela) MOVENDO ELA DE LUGAR */
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
