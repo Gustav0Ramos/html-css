@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Sriracha & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Chango & display=swap');
+
+:root{
+    --fonte-titulo: 'Chango', arial;
+    --fonte-texto: 'Sriracha', cursive;
+}
+
+header{
+    background-color: black;
+    color: white;
+    margin: -10px;
+    padding: 50px;
+}
+header > h1{
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    font-weight: bolder;
+}
+header > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+main {
+    min-width: 280px;
+    text-align: left;
+}
+
+h2#um {
+    background-color: white;
+    font-family: var(--fonte-texto);
+    font-weight: bolder;
+    padding: 20px;
+    margin: 0px -8px 0px -8px;
+}
+
+section{
+    
+    margin: -8px;
+}
+.fla {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.267);
+    margin: 2px 2px 2px -15px;
+    text-indent: 30px;
+}
+
+h2#dois {
+    background-image: url('imagens/livro-um.jpg');
+    
+    height: 100vh;
+    background-position: center top ;
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: var(--fonte-texto);
+    font-weight: bolder;
+    padding: 20px;
+    margin: 0px -8px 0px -8px;
+}
+
+h2#tres{
+    background-color: white;
+    font-weight: bolder;
+    padding: 20px;
+    margin: 0px -8px 0px -8px;
+    font-family: var(--fonte-texto);
+}
+
+h2#quatro{
+    background-image: url('imagens/livro-dois.jpg');
+    color: white;
+
+    height: 100vh;
+    background-position: center center ;
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: var(--fonte-texto);
+    font-weight: bolder;
+    padding: 20px;
+    margin: 0px -8px 0px -8px;
+}
+
+h2#cinco{
+    background-color: white;
+    font-family: var(--fonte-texto);
+    font-weight: bolder;
+    padding: 20px;
+    margin: 0px -8px 0px -8px;
+}
+
+h2#seis{
+    background-image: url('imagens/livro-tres.jpg');
+    color: white;
+
+    height: 100vh;
+    background-position: center bottom ;
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: var(--fonte-texto);
+    font-weight: bolder;
+    padding: 20px;
+    margin: 0px -8px 0px -8px;
+}
+
+h2#sete{
+    background-color: white;
+    font-family: var(--fonte-texto);
+    font-weight: bolder;
+    padding: 20px;
+    margin: 0px -8px 0px -8px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding: 5px;
+    margin: -8px;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
