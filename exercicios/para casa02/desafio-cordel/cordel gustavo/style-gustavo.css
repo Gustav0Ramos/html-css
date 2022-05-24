@@ -58,6 +58,10 @@ section{
     font-family: var(--fonte3);
 }
 
+section > p{
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -71,6 +75,26 @@ section.imagem > p {
     width: 400px;
     background-color: rgba(0, 0, 0, 0.253);
     padding: 5px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.644); /* SOMBRA NA LETRA */
+    box-shadow: 6px 6px 13 0px black; /* SOMBRA INTERNA, NA CAIXA DA FOTO */
+    background-attachment: fixed; /* PARA DAR O EFEITO PARALAX */
+}
+
+section#img01{
+    background-image: url(livro-um.jpg);
+    background-position: left center; /* POSIÇÃO QUE VAI FOCAR NA FOTO */
+    background-size: cover; /* CORTOU A IMAGEM MAS DEIXOU ELA NA TELA TODA */
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13 0px black;
+
+}
+
+section#img02{
+    background-image: url(livro-dois.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13 0px black;
 }
 
 footer {
