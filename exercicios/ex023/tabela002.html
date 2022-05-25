@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 520px;
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            }
+        caption{
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: lightgray;
+            font-weight: bold;
+            }
+        th.cidade{
+                text-align: left;
+            }
+        tfoot{
+                background-color: gray;
+                color: white;
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD (coloco o tr, td, th)
+            TBODY (coloco o tr, td, th)
+            TFOOT (coloco o tr, td, th)
+    -->
+    <table> <!-- INDICAÇÃO QUE VAI TER TABELA -->
+        <caption>População das Unidades Federativas</caption> <!-- POPULAÇÃO DAS UNIDADES FEDERATIVAS -->
+       <thead> <!-- CABEÇA DA TABELA -->
+            <tr> <!-- LINHA -->
+                <th>Estado</th> <!-- COLUNA -->
+                <th>População</th>
+                <th>% da população total</th>
+            </tr>
+       </thead>
+       <tbody>
+            <tr>
+                <th class="cidade">São Paulo</th>
+                <th>41 262 199</th>
+                <th>21,9%</th>
+            </tr>
+            <tr>
+                <th class="cidade">Minas Gerais</th>
+                <th>19 597 330</th>
+                <th>10,1%</th>
+            </tr>
+            <tr>
+                <th class="cidade">Rio de Janeiro</th>
+                <th>17 463 349</th>
+                <th>8,2%</th>
+            </tr>
+            <tr>
+                <th class="cidade">Bahia</th>
+                <th>14 985 284</th>
+                <th>7,1%</th>
+            </tr>
+            <tr>
+                <th class="cidade">Paraná</th>
+                <th>11 597 484</th>
+                <th>5,4%</th>
+            </tr>
+            <tr>
+                <th class="cidade">Rio Grande do Sul</th>
+                <th>11 466 630</th>
+                <th>5,4%</th>
+            </tr>
+            <tr>
+                <th class="cidade">Pernanbuco</th>
+                <th>9 674 793</th>
+                <th>4,5%</th>
+            </tr>
+            <tr>
+                <th class="cidade">Ceará</th>
+                <th>9 240 580</th>
+                <th>4,3%</th>
+            </tr>
+            <tr>
+                <th class="cidade">Pará</th>
+                <th>8 777 124</th>
+                <th>4,1%</th>
+            </tr>
+            <tr>
+                <th class="cidade">Santa Catarina</th>
+                <th>7 338 473</th>
+                <th>3,4%</th>
+            </tr>
+            <tr>
+                <th class="cidade">Goiás</th>
+                <th>7 206 589</th>
+                <th>3,4%</th>
+            </tr>
+       </tbody>
+       <tfoot>
+            <tr>
+                <th>TOTAL</th>
+                <th>141 164 298</th>
+                <th><strong>77,8%</strong></th>
+            </tr>
+       </tfoot> 
+    </table>
+    
+</body>
+</html>
