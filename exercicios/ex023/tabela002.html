@@ -12,6 +12,7 @@
         table{
             width: 520px;
             border-collapse: collapse;
+            position: relative; /* CONFIGURAÇÃO COMPORTAMENTAL, PARA QUE O CABEÇALHO DATEBAL FIQUE FIXO */
         }
         thead{
             background-color: gray;
@@ -21,6 +22,14 @@
             border: 1px solid black;
             padding: 10px;
             }
+        thead > tr > th { /* TAG PARA O CABEÇALHO FICAR FIXO QUANDO ROLAR A TELA PARA BAIXO */
+            position: sticky;
+            top: -1px; /* inves de 0 coloco -1px e aí não aparece nada em cima do cabeçalho */
+            background-color: gray; 
+        }
+        tbody > tr:nth-child(2n) { /* AQUI DÁ O EFEITO ZEBRADO :nth-child(2n) */
+            background-color: lightgray; 
+        }
         caption{
             font-size: 1.5em;
             padding: 10px;
@@ -111,6 +120,41 @@
                 <th>7 206 589</th>
                 <th>3,4%</th>
             </tr>
+            <tr>
+                <th class="cidade">Maranhão</th>
+                <th>7 153 262</th>
+                <th>3,4%</th>
+            </tr>
+            <tr>
+                <th class="cidade">Amazonas</th>
+                <th>4 269 995</th>
+                <th>2,0%</th>
+            </tr>
+            <tr>
+                <th class="cidade">Espírito Santo</th>
+                <th>4 108 508</th>
+                <th>1,9%</th>
+            </tr>
+            <tr>
+                <th class="cidade">Paraíba</th>
+                <th>4 059 905</th>
+                <th>1,9%</th>
+            </tr>
+            <tr>
+                <th class="cidade">Mato Grosso</th>
+                <th>3 567 234</th>
+                <th>1,7%</th>
+            </tr>
+            <tr>
+                <th class="cidade">Rio Grande do Norte</th>
+                <th>3 560 903</th>
+                <th>1,75</th>
+            </tr>
+            <tr>
+                <th class="cidade">Alagoas</th>
+                <th>3 365 351</th>
+                <th>1,6%</th>
+            </tr>
        </tbody>
        <tfoot>
             <tr>
@@ -120,6 +164,16 @@
             </tr>
        </tfoot> 
     </table>
+    
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iste, dicta voluptate cupiditate saepe rerum officia! Doloribus porro a, optio sequi repudiandae, hic adipisci velit ducimus veniam nemo deleniti impedit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam id itaque hic ipsam sint tenetur doloribus totam commodi enim minus distinctio, aperiam odit odio rem dignissimos aliquam laboriosam illum. Harum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos molestiae recusandae quaerat enim distinctio officiis ipsam, at nesciunt dolores obcaecati natus nisi beatae, iure dignissimos voluptates delectus ex ipsum commodi!</P>
+    
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iste, dicta voluptate cupiditate saepe rerum officia! Doloribus porro a, optio sequi repudiandae, hic adipisci velit ducimus veniam nemo deleniti impedit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam id itaque hic ipsam sint tenetur doloribus totam commodi enim minus distinctio, aperiam odit odio rem dignissimos aliquam laboriosam illum. Harum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos molestiae recusandae quaerat enim distinctio officiis ipsam, at nesciunt dolores obcaecati natus nisi beatae, iure dignissimos voluptates delectus ex ipsum commodi!</P>
+    
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iste, dicta voluptate cupiditate saepe rerum officia! Doloribus porro a, optio sequi repudiandae, hic adipisci velit ducimus veniam nemo deleniti impedit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam id itaque hic ipsam sint tenetur doloribus totam commodi enim minus distinctio, aperiam odit odio rem dignissimos aliquam laboriosam illum. Harum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos molestiae recusandae quaerat enim distinctio officiis ipsam, at nesciunt dolores obcaecati natus nisi beatae, iure dignissimos voluptates delectus ex ipsum commodi!</P>
+    
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iste, dicta voluptate cupiditate saepe rerum officia! Doloribus porro a, optio sequi repudiandae, hic adipisci velit ducimus veniam nemo deleniti impedit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam id itaque hic ipsam sint tenetur doloribus totam commodi enim minus distinctio, aperiam odit odio rem dignissimos aliquam laboriosam illum. Harum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos molestiae recusandae quaerat enim distinctio officiis ipsam, at nesciunt dolores obcaecati natus nisi beatae, iure dignissimos voluptates delectus ex ipsum commodi!</P>
+
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iste, dicta voluptate cupiditate saepe rerum officia! Doloribus porro a, optio sequi repudiandae, hic adipisci velit ducimus veniam nemo deleniti impedit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam id itaque hic ipsam sint tenetur doloribus totam commodi enim minus distinctio, aperiam odit odio rem dignissimos aliquam laboriosam illum. Harum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos molestiae recusandae quaerat enim distinctio officiis ipsam, at nesciunt dolores obcaecati natus nisi beatae, iure dignissimos voluptates delectus ex ipsum commodi!</P>
     
 </body>
 </html>
