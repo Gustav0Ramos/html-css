@@ -8,10 +8,23 @@
 </head>
 <body>
     <h1>Meu primeiro Formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
+        <!--
+            ACTION -> ligo ao botão (action e ligado ao input de enviar) uso em PHP
+            METHOD -> para tirar o preenchimento do campo da url
+            INPUT -> caixa de entrada de dados
+            LABEL -> uso para ligar o NOME ao campo de preenchimento
+            FOR -> uso para saber qual Nome corresponde ao compo de preenchimento (for e id/name tem o mesmo nome)
+            TYPE -> tipo de input que vou colocar (submit, number, button,...)
+            VALUE -> nome que vai ter o botão (enviar, somar, cadastrar,...)
+            AUTOCOMPLETE -> tira ou coloca um campo já preenchido antes no formulário
+            NAME/ID -> coloco para nomear ou identificar minhas tags
+        -->
     </form>
 </body>
 </html>
