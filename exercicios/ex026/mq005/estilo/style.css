@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+}
+
+header {
+    padding: 25px;
+    margin: -9px;
+    background-color: darkgray;
+}
+
+header h1{
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    font-weight: lighter;
+    color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(75, 75, 75);
+    text-decoration: none;
+}
+
+main {
+    border-radius: 15px;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    min-width: 280px;
+    max-width: 1000px; 
+}
+
+main p {
+    padding: 10px;
+}
