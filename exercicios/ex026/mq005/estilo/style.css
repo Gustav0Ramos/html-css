@@ -1,41 +1,76 @@
 @charset "UTF-8";
 
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: lightblue;
-}
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+        background-color: lightgray;
+    }
+    
+    header {
+        padding-top: 25px;
+        padding-bottom: 9px;
+        background-color: darkgray;
+    }
+    
+    header h1{
+        margin: auto;
+        padding: 30px;
+        font-size: 2.5em;
+        text-align: center;
+    }
+    
+    a {
+        font-weight: lighter;
+        color: lightgray;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgb(75, 75, 75);
+        text-decoration: none;
+        text-align: center;
+    }
 
-header {
-    padding: 25px;
-    margin: -9px;
-    background-color: darkgray;
-}
+    menu{
+        display: block;
+    }
 
-header h1{
-    padding: 10px;
-    text-align: center;
-}
-
-a {
-    font-weight: lighter;
-    color: lightgray;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: rgb(75, 75, 75);
-    text-decoration: none;
-}
-
-main {
-    border-radius: 15px;
-    margin: auto;
-    padding: 15px;
-    background-color: white;
-    min-width: 280px;
-    max-width: 1000px; 
-}
-
-main p {
-    padding: 10px;
-}
+    menu a{
+        display: block;
+        padding: 10px;
+    }
+    menu > ul > li > a {
+        display: block;
+        padding: 10px;
+        border-top: solid 2px gray;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+        background-color: rgba(75, 75, 75, 0.767);
+    }
+    a:visited{
+        color: white;
+    }
+    
+    main {
+        border-radius: 15px;
+        padding: 10px;
+        margin-top: 10px ;
+        margin: auto;
+        background-color: white; 
+        width: 90vw;
+        max-width: 680px;
+    }
+    
+    main h1 {
+        padding-bottom: 20px;
+    }
+    
+    main p {
+        margin-bottom: 20px;
+        text-indent: 20px;
+        text-align: justify;
+    }  
