@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
     <link rel="stylesheet" href="estilo/style.css" media="screen">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-rounded" onclick="clique()">menu</span>
+        <menu id="menu">
             <ul>
                 <li><a href="http://">Opção 1</a></li>
                 <li><a href="http://">Opção 2</a></li>
@@ -29,6 +30,15 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti provident magni nam, rem tempore ut nisi earum quam fugit, est nostrum voluptas sed porro doloremque, culpa quisquam reiciendis? Eveniet, magnam!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque excepturi consequuntur eos minima doloribus, nisi modi alias, iusto id vero quidem neque cumque reprehenderit aspernatur velit distinctio nesciunt ipsa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos assumenda possimus facilis vero ad repudiandae officiis, quidem earum eos pariatur hic iusto rerum odit. Doloribus similique nemo facilis earum odit!</p>
     </main>
+    <script>
+        function clique(){
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 
     
 </body>

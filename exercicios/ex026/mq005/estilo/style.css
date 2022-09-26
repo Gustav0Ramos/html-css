@@ -22,6 +22,19 @@
         font-size: 2.5em;
         text-align: center;
     }
+
+    #burguer {
+        background-color: rgb(49, 49, 49);
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #burguer:hover{
+        background-color: white;
+        color: black;
+    }
     
     a {
         font-weight: lighter;
@@ -34,7 +47,7 @@
     }
 
     menu{
-        display: block;
+        display: none;
     }
 
     menu a{
